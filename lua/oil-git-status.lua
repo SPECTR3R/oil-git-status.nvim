@@ -59,15 +59,15 @@ local function parse_git_status(git_status_stdout, git_ls_tree_stdout)
 end
 
 local highlight_group_suffix_for_status_code = {
-  ["!"] = "Ignored",
+  ["×"] = "Ignored",
   ["?"] = "Untracked",
-  ["A"] = "Added",
-  ["C"] = "Copied",
-  ["D"] = "Deleted",
-  ["M"] = "Modified",
-  ["R"] = "Renamed",
+  ["+"] = "Added",
+  ["©"] = "Copied",
+  ["-"] = "Deleted",
+  ["~"] = "Modified",
+  ["→"] = "Renamed",
   ["T"] = "TypeChanged",
-  ["U"] = "Unmerged",
+  ["!"] = "Unmerged",
   [" "] = "Unmodified",
 }
 
